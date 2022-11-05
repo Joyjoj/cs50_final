@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> {% block title %}  {% endblock title %}</title>
+
+	<style> 
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.main_block {
+		/* width: 80%; */
+		background-color: lightgray;
+	}
+	a {		
+		display: flex;
+		justify-content: center;
+				
+	}
+
+	/* {{ url_for('index') }} */
+	</style>
+</head>
+<body>
+	<div class="main_block">
+	
+		<a href= {{ url_for('index') }}>Main Thiasasasdasdddg</a>
+		<a href= {{ url_for('login') }}>Login</a>
+		<a href= {{ url_for('register') }}>Register</a>
+		<a href= {{ url_for('profile') }}>Profile</a>
+		
+
+	</div>
+
+	<h1>  {% block intro %} {% endblock intro %} </h1>
+
+
+
+</body>
+</html>
